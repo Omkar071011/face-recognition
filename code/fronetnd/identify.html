@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staffron Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .photo-placeholder {
+            width: 150px;
+            height: 150px;
+            border: 2px dashed #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .output-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="content">
+            <h1>Upload Employee Photo</h1>
+
+            <div class="photo-upload">
+                <!-- Placeholder for photo -->
+                <div id="placeholder1" class="photo-placeholder" onclick="document.getElementById('file-input1').click();">
+                    <input id="file-input1" class="file-input" type="file" accept="image/*" style="display: none;" required>
+                </div>
+            </div>
+
+            <button id="identify-button">Identify</button>
+
+            <div class="output-container" id="output-container">
+                <h2>Identification Results</h2>
+                <pre id="output"></pre>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Powered by Staffron</p>
+        </div>
+    </div>
+
+    <script src="identify.js">
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staffron Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="content">
+            <h1>Upload Employee Photos</h1>
+
+            <div class="photo-upload">
+                <!-- Placeholder for photo 1 -->
+                <div id="placeholder1" class="photo-placeholder" onclick="document.getElementById('file-input1').click();">
+                    <input id="file-input1" class="file-input" type="file" accept="image/*" style="display: none;" required>
+                </div>
+
+                <!-- Placeholder for photo 2 -->
+                <div id="placeholder2" class="photo-placeholder" onclick="document.getElementById('file-input2').click();">
+                    <input id="file-input2" class="file-input" type="file" accept="image/*" style="display: none;" required>
+                </div>
+
+                <!-- Placeholder for photo 3 -->
+                <div id="placeholder3" class="photo-placeholder" onclick="document.getElementById('file-input3').click();">
+                    <input id="file-input3" class="file-input" type="file" accept="image/*" style="display: none;" required>
+                </div>
+
+                <!-- Placeholder for photo 4 -->
+                <div id="placeholder4" class="photo-placeholder" onclick="document.getElementById('file-input4').click();">
+                    <input id="file-input4" class="file-input" type="file" accept="image/*" style="display: none;" required>
+                </div>
+
+                <!-- Placeholder for photo 5 -->
+                <div id="placeholder5" class="photo-placeholder" onclick="document.getElementById('file-input5').click();">
+                    <input id="file-input5" class="file-input" type="file" accept="image/*" style="display: none;" required>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <label for="label">Label:</label>
+                <input type="text" id="label" placeholder="Enter label" required>
+            </div>
+
+            <button id="train-button">Train</button>
+        </div>
+
+        <div class="footer">
+            <p>Powered by Staffron</p>
+        </div>
+    </div>
+
+    <script src="train.js">
+        
+    </script>
+</body>
+
+</html>

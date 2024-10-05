@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detach Label</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #6f42c1;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label, input, button {
+            display: block;
+            margin: 10px auto;
+        }
+
+        input {
+            padding: 10px;
+            width: calc(100% - 24px); /* Adjust for padding */
+            max-width: 300px;
+        }
+
+        button {
+            background-color: #6f42c1;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #5a379a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Detach</h1>
+        <form id="deleteForm">
+            <label for="label">Label:</label>
+            <input type="text" id="label" name="label" required>
+            <button type="submit">Detach</button>
+        </form>
+        <p id="responseMessage"></p>
+    </div>
+
+    <script src="delete.js"></script>
+</body>
+</html>
