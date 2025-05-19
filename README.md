@@ -1,24 +1,59 @@
-Description This project implements a face recognition system using Flask, OpenCV, and Face Recognition libraries. It provides APIs to train, identify, and delete faces from the recognition system.
+# 🧠 Face Recognition System API
 
-Features Train the system with multiple face images. Identify faces in images. Manage the face database (add/delete). API documentation with Swagger.
+This project implements a **Face Recognition System** using **Flask**, **OpenCV**, and the **face_recognition** library. It provides REST APIs to **train**, **identify**, and **delete** faces, along with Swagger-based documentation.
 
-Installation Prerequisites Python 3.7 or higher MongoDB
+---
 
-Dependencies To install the required dependencies, run: pip install -r requirements.txt
+## 🚀 Features
 
-Steps for Setting Up the Project:
+- ✅ Train the system with multiple face images  
+- ✅ Identify faces in uploaded images  
+- ✅ Add or delete faces from the database  
+- ✅ API documentation via Swagger (`.yml` files)
 
-Download and install Python.
+---
 
-Set Up a Virtual Environment in following steps a) Create a virtual environment: python -m venv venv b) Activate the virtual environment: venv\Scripts\activate
+## 🛠️ Installation
 
-Install Required Packages i.e. flask, flask-cors, face_recognition, opencv-python numpy, flasgger, pymongo
+### ✅ Prerequisites
 
-Create Project Structure in the specified method
+- Python 3.7 or higher  
+- MongoDB installed and running locally or on a server
 
-project/ ├── app.py ├── swagger/ │ ├── train.yml │ ├── identify.yml │ └── delete.yml ├── database.py ├── venv/ └── requirements.txt
+---
 
-Create database.py.
-Create Swagger YML Files.
-Configure VS Code for Flask.
-Run the Flask Application: flask run
+## 📁 Project Structure
+
+project/
+├── app.py
+├── database.py
+├── swagger/
+│ ├── train.yml
+│ ├── identify.yml
+│ └── delete.yml
+├── requirements.txt
+└── venv/
+
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Install Python (if not already)
+
+[Download Python](https://www.python.org/downloads/)
+
+---
+
+### 2️⃣ Create and Activate Virtual Environment
+
+```bash
+# Create a virtual environment
+python -m venv venv
+
+# Activate it
+# Windows:
+venv\Scripts\activate
+
+# macOS/Linux:
+source venv/bin/activate
