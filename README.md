@@ -57,3 +57,31 @@ venv\Scripts\activate
 
 # macOS/Linux:
 source venv/bin/activate
+
+### 3️⃣ Install Required Packages
+
+#### Option 1: Install from `requirements.txt`
+
+```bash
+pip install flask flask-cors face_recognition opencv-python numpy flasgger pymongo
+
+### 4 Create `database.py`
+
+This file handles all interactions with the MongoDB database.
+
+You should define functions to:
+
+- Add face data to the database
+- Retrieve face data for identification
+- Delete face data from the database
+
+Example (basic structure):
+
+```python
+from pymongo import MongoClient
+
+client = MongoClient("mongodb://localhost:27017/")
+db = client["face_db"]
+collection = db["faces"]
+
+
